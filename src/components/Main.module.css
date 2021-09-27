@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(38, 0, 255, 0.836);
+  position: relative;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "a a . b"
+      ". c c ."
+      ". c c ."
+      "d e f g";
+    width: 1366px;
+    height: 1024px;
+    background-color: #498CEC;
+    position: relative;
+  }
+  
+  .a { grid-area: a;
+    color: #FFFFFF;
+    position: relative;
+}
+.a_city {
+  position: absolute;
+  font-size: 50px;
+  left: 99px;
+  top: 75px;
+}
+.a__smena {
+  font-size: 18px;
+  position: absolute;
+  top: 144px;
+  left: 101px;
+}
+.a_location {
+  position: absolute;
+  font-size: 18px;
+  left: 292px;
+  top: 140px;
+}
+.a_location img {
+  transform: rotate(11deg);
+}
+.b { grid-area: b;
+  color: rgb(173, 13, 13);
+  }
+.c { grid-area: c;
+  position: relative;
+  left: 120px;
+  top: 90px;
+  }
+.c_temp {
+    position: absolute;
+    left: 50px;
+    left: 200px;
+    top: 40px;
+    font-size: 100px;
+    color: #FFFFFF;
+    font-style: initial;
+  }
+.c_img {
+    position: absolute;
+  }
+.c_valueWeather {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .d { grid-area: d;
+    position: absolute;
+    left: 101px;
+  color: #FFFFFF;
+  font-size: 18px;
+  top: 40px;
+  }
+   .e { grid-area: e;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    left: 50px;
+    top: 40px; 
+   }
+   .f { grid-area: f;  
+     position: absolute;
+    color: #FFFFFF;
+    font-size: 18px; 
+    left: 50px;
+    top: 40px;  
+  }
+  .g { grid-area: g;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    top: 40px;
+  }
